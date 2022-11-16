@@ -1,0 +1,66 @@
+.header {
+    padding-top: 12px;
+}
+.mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+}
+.mobile__button {
+    background-color: transparent;
+    border: none;
+}
+.button__burger {
+    fill: $main-color;
+}
+.nav {
+}
+.nav__list {
+    @extend %list;
+    margin-top: 51px;
+}
+.nav__item {
+    text-align: center;
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+.nav__link {
+    @extend %link;
+
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.2;
+
+    color: $main-color;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $secondary-color;
+    }
+}
+.button__buy {
+    @include button(14px, 152px, 42px);
+    position: relative;
+
+    display: block;
+    margin: 0 auto;
+    margin-top: 111px;
+
+    width: 152px;
+    height: 42px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 16px;
+        right: 25px;
+        width: 10px;
+        height: 12px;
+        background-image: url(../Images/arrow_btn.png);
+    }
+}

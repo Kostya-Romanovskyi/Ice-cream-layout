@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ice cream</title>
+
+    <!-- FAVICON -->
+
+    <!-- MODERN NORMILIZE -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- LINK FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@700&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="mobile">
+          <a href="./index.html" class="logo">
+            <picture>
+              <source
+                srcset="
+                  ./Images/Logo/logo_x1.png 1x,
+                  ./Images/Logo/logo_x2.png 2x,
+                  ./Images/Logo/logo_x3.png 3x
+                "
+                media="(max-width:767px)"
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ./Images/Logo/logo_tablet_1x.png 1x,
+                  ./Images/Logo/logo_tablet_2x.png 2x,
+                  ./Images/Logo/logo_tablet_3x.png 3x
+                "
+                media="(max-width: 1199px)"
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ./Images/Logo/logo_desctop_1x.png 1x,
+                  ./Images/Logo/logo_desctop_1x.png 2x,
+                  ./Images/Logo/logo_desctop_1x.png
+                "
+                media="(min-width: 1200px)"
+                type="image/png"
+              />
+              <img
+                src="./images/logo/logo-desktop/logo-desktop@1x.png"
+                width="48"
+                height="44"
+                alt="logo"
+                loading="lazy"
+              />
+            </picture>
+          </a>
+          <button class="mobile__button">
+            <svg class="button__burger" type="button" width="32" height="32">
+              <use href="./Images/symbol-defs.svg#cross-close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="nav__wrapp">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="">Home</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">How it’s made?</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Our products</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="button__buy" type="button">Buy now</button>
+        </div>
+      </div>
+    </header>
+    <script src="./js/header-mobile.js" type="modul"></script>
+  </body>
+</html>
