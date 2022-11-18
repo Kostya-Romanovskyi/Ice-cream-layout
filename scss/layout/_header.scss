@@ -1,10 +1,13 @@
 .header {
+    position: relative;
     padding-top: 12px;
 }
 .mobile {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    margin-bottom: 61px;
 }
 .logo {
 }
@@ -15,11 +18,19 @@
 .button__burger {
     fill: $main-color;
 }
+.nav__wrapp {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 25px;
+    background-color: $main-bg-color;
+}
 .nav {
 }
 .nav__list {
     @extend %list;
     margin-top: 51px;
+    margin-bottom: 111px;
 }
 .nav__item {
     text-align: center;
@@ -44,23 +55,12 @@
     }
 }
 .button__buy {
-    @include button(14px, 152px, 42px);
+    @include main__button(14px, 152px, 42px);
     position: relative;
 
     display: block;
     margin: 0 auto;
-    margin-top: 111px;
 
     width: 152px;
     height: 42px;
-
-    &::after {
-        content: "";
-        position: absolute;
-        top: 16px;
-        right: 25px;
-        width: 10px;
-        height: 12px;
-        background-image: url(../Images/arrow_btn.png);
-    }
 }

@@ -56,7 +56,7 @@
                 srcset="
                   ./Images/Logo/logo_desctop_1x.png 1x,
                   ./Images/Logo/logo_desctop_1x.png 2x,
-                  ./Images/Logo/logo_desctop_1x.png
+                  ./Images/Logo/logo_desctop_1x.png 3x
                 "
                 media="(min-width: 1200px)"
                 type="image/png"
@@ -72,7 +72,7 @@
           </a>
           <button class="mobile__button">
             <svg class="button__burger" type="button" width="32" height="32">
-              <use href="./Images/symbol-defs.svg#cross-close"></use>
+              <use href="./Images/symbol-defs.svg#burger"></use>
             </svg>
           </button>
         </div>
@@ -97,6 +97,105 @@
         </div>
       </div>
     </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">
+            ice cream made with <span class="hero__title--mod"> passion</span>
+          </h1>
+          <div class="hero__navigatin">
+            <button class="hero__button" type="button">Products</button>
+            <a class="hero__link" href="">How it’s made?</a>
+          </div>
+        </div>
+        <div class="hero__img__wrapp">
+          <img
+            class="hero__ice-cream"
+            src="./Images/hero/ice_cream.png"
+            alt="Ice cream"
+          />
+          <svg class="" width="328" height="50">
+            <use href="./Images/symbol-defs.svg#dots"></use>
+          </svg>
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="container">
+          <p class="sub__title">100% natural</p>
+          <h2 class="title">products</h2>
+          <ul class="product__list">
+            <li class="product__item product__item--green">
+              <picture>
+                <source
+                  srcset="
+                    ./Images/products/product1_1x.png 1x,
+                    ./Images/products/product1_2x.png 2x,
+                    ./Images/products/product1_3x.png 3x
+                  "
+                />
+                <img
+                  class="product__img"
+                  src="./Images/products/product1_1x.png"
+                  alt="Scoop ice cream cone"
+                />
+              </picture>
+              <h3 class="product__title">ice cream</h3>
+              <p class="product__text">
+                Soft ice cream with a delicate taste. Made with milk, cream,
+                sugar and natural stabilizer
+              </p>
+              <button type="button"></button>
+            </li>
+            <li class="product__item product__item--yellow">
+              <picture>
+                <source
+                  srcset="
+                    ./Images/products/product2_1x.png 1x,
+                    ./Images/products/product2_2x.png 2x,
+                    ./Images/products/product2_3x.png 3x
+                  "
+                />
+                <img
+                  class="product__img"
+                  src="./Images/products/product2_1x.png"
+                  alt="Scoop ice cream cone"
+                />
+              </picture>
+              <h3 class="product__title">ice coffee</h3>
+              <p class="product__text">
+                Fragrant invigorating drink created from 100% natural
+                ingredients without the use of preservatives and flavor
+                enhancers
+              </p>
+              <button type="button"></button>
+            </li>
+            <li class="product__item product__item--orange">
+              <picture>
+                <source
+                  srcset="
+                    ./Images/products/product3_1x.png 1x,
+                    ./Images/products/product3_2x.png 2x,
+                    ./Images/products/product3_3x.png 3x
+                  "
+                />
+                <img
+                  class="product__img"
+                  src="./Images/products/product3_1x.png"
+                  alt="Scoop ice cream cone"
+                />
+              </picture>
+              <h3 class="product__title">milkshakes</h3>
+              <p class="product__text">
+                Sweet drinks based on milk and ice cream, supplemented with
+                syrups, fruits, berries and other sweets of your choice
+              </p>
+              <button type="button"></button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
     <script src="./js/header-mobile.js" type="modul"></script>
   </body>
 </html>

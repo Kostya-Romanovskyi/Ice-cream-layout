@@ -1,0 +1,35 @@
+.hero {
+}
+.hero__title {
+    @include title(26px, 1.26, $main-color);
+    margin-bottom: 32px;
+
+    &--mod {
+        @include title(34px, 1.26, $main-color);
+    }
+}
+.hero__navigatin {
+    margin-bottom: 189px;
+}
+.hero__button {
+    @include secondary__button(8px, 10px, 62px, 24px);
+}
+.hero__link {
+    font-family: $main-font;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 1.25;
+    text-decoration-line: underline;
+
+    margin-left: 16px;
+
+    color: $buttons-bg-color;
+}
+.hero__img__wrapp {
+    position: relative;
+}
+.hero__ice-cream {
+    position: absolute;
+    bottom: -51px;
+    left: 44px;
+}
