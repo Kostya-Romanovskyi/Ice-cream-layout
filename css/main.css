@@ -1,4 +1,4 @@
-.product__list, .nav__list {
+.how-made__list, .product__list, .nav__list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -42,10 +42,11 @@ p {
 .container {
   padding: 0px 20px;
   margin: 0 auto;
+  padding: 0 16px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
   .container {
-    max-width: 320px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -119,6 +120,7 @@ p {
 }
 
 .button__buy {
+  display: block;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2;
@@ -130,30 +132,33 @@ p {
   background-color: #f8d24e;
   color: #131313;
   position: relative;
-  display: block;
   margin: 0 auto;
   width: 152px;
   height: 42px;
 }
 
 .hero__title {
+  display: block;
   font-family: "Seymour One", sans-serif;
   font-size: 26px;
   line-height: 1.26;
   letter-spacing: 0.04em;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
+  text-align: center;
   color: #fcfcfc;
+  text-align: left;
   margin-bottom: 32px;
 }
 .hero__title--mod {
+  display: block;
   font-family: "Seymour One", sans-serif;
   font-size: 34px;
   line-height: 1.26;
   letter-spacing: 0.04em;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
+  text-align: center;
   color: #fcfcfc;
+  text-align: left;
 }
 
 .hero__navigatin {
@@ -194,13 +199,17 @@ p {
   left: 44px;
 }
 
+.hero__dots {
+  width: 100%;
+}
+
 .products {
   padding: 60px 0;
   background-image: url(../Images/products/bg-ice_cream.png);
   background-color: #ffffff;
 }
 
-.sub__title {
+.product__sub-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -210,20 +219,25 @@ p {
   color: #131313;
 }
 
-.title {
+.products__title {
+  display: block;
   font-family: "Seymour One", sans-serif;
   font-size: 30px;
   line-height: 1.26;
   letter-spacing: 0.04em;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #131313;
   text-align: center;
+  color: #131313;
+}
+.products__title--indent {
+  margin-bottom: 150px;
 }
 
 .product__item {
-  background-color: #fff;
+  position: relative;
+  background-color: #ffffff;
   border-radius: 24px;
+  padding: 0 40px;
 }
 .product__item:not(:last-child) {
   margin-bottom: 164px;
@@ -239,12 +253,30 @@ p {
 }
 
 .product__img {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   display: block;
   margin: 0 auto;
-  border-bottom: 13px solid linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+  border-bottom: 11px solid;
   border-radius: 50%;
+}
+.product__img--green {
+  border-bottom-color: #aec6a5;
   -webkit-box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
           box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+}
+.product__img--yellow {
+  border-bottom-color: #efd478;
+  -webkit-box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+          box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+}
+.product__img--orange {
+  border-bottom-color: #d6936d;
+  -webkit-box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
 }
 
 .product__title {
@@ -255,14 +287,141 @@ p {
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  padding-top: 123px;
+  margin-bottom: 40px;
   color: #131313;
 }
 
 .product__text {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  line-height: 176%;
+  line-height: 1.76;
   text-align: center;
   letter-spacing: 0.04em;
+  margin-bottom: 90px;
   color: #131313;
+}
+
+.product__button {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.how-made {
+  padding: 60px 0;
+}
+
+.how-made__sub-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fcfcfc;
+}
+.how-made__sub-title--indent {
+  margin-bottom: 12px;
+}
+
+.how-made__title {
+  display: block;
+  font-family: "Seymour One", sans-serif;
+  font-size: 30px;
+  line-height: 1.26;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fcfcfc;
+}
+.how-made__title--indent {
+  margin-bottom: 32px;
+}
+
+.how-made__img-bg {
+  position: relative;
+  width: 278px;
+  height: 278px;
+  margin-bottom: 62px;
+  border-radius: 50%;
+  background-color: #efd478;
+}
+
+.how-made__img {
+  position: absolute;
+  top: 22px;
+  left: 0;
+  display: block;
+  width: 100%;
+}
+
+.how-made__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 1.76;
+  padding: 0 32px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #fcfcfc;
+}
+.how-made__text--indent {
+  margin-bottom: 20px;
+}
+
+.how-made__button {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  width: 164px;
+  height: 42px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f8d24e;
+  color: #131313;
+  margin: 0 auto;
+  margin-bottom: 54px;
+}
+
+.how-made__item {
+  text-align: center;
+}
+
+.how-made__icon {
+  margin-bottom: 16px;
+}
+
+.how-made__svg {
+  padding: 7px;
+  border-radius: 50%;
+  background-color: #f8d24e;
+}
+
+.how-made__numbers {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  color: #fcfcfc;
+}
+
+.how-made__discr {
+  font-family: #fcfcfc;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+  padding: 0 45px;
+  color: #fcfcfc;
+}
+.how-made__discr--indent {
+  margin-bottom: 0;
 }/*# sourceMappingURL=main.css.map */

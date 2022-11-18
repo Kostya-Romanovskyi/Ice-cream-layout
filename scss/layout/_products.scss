@@ -3,20 +3,25 @@
     background-image: url(../Images/products/bg-ice_cream.png);
     background-color: $white-color;
 }
-.sub__title {
+.product__sub-title {
     @include sub__title(18px, 1.22, $secondary-color);
 }
-.title {
+.products__title {
     @include title(30px, 1.26, $secondary-color);
-    text-align: center;
+
+    &--indent {
+        margin-bottom: 150px;
+    }
 }
 
 .product__list {
     @extend %list;
 }
 .product__item {
-    background-color: #fff;
+    position: relative;
+    background-color: $white-color;
     border-radius: 24px;
+    padding: 0 40px;
 
     &:not(:last-child) {
         margin-bottom: 164px;
@@ -33,12 +38,29 @@
     }
 }
 .product__img {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     display: block;
     margin: 0 auto;
 
-    border-bottom: 13px solid linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+    border-bottom: 11px solid;
     border-radius: 50%;
-    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+
+    &--green {
+        border-bottom-color: $green-bg;
+        box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+    }
+    &--yellow {
+        border-bottom-color: $yellow-bg;
+        box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+    }
+    &--orange {
+        border-bottom-color: $orange-bg;
+        box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+    }
 }
 .product__title {
     font-family: $main-font;
@@ -49,15 +71,33 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
+    padding-top: 123px;
+    margin-bottom: 40px;
+
     color: $secondary-color;
 }
 .product__text {
     font-family: $main-font;
     font-size: 14px;
-    line-height: 176%;
+    line-height: 1.76;
 
     text-align: center;
     letter-spacing: 0.04em;
 
+    margin-bottom: 90px;
+
     color: $secondary-color;
+}
+.product__button {
+    display: block;
+    margin: 0 auto;
+
+    padding-bottom: 10px;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+.product__svg {
 }

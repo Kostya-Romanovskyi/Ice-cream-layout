@@ -2,10 +2,12 @@
 }
 .hero__title {
     @include title(26px, 1.26, $main-color);
+    text-align: left;
     margin-bottom: 32px;
 
     &--mod {
         @include title(34px, 1.26, $main-color);
+        text-align: left;
     }
 }
 .hero__navigatin {
@@ -32,4 +34,7 @@
     position: absolute;
     bottom: -51px;
     left: 44px;
+}
+.hero__dots {
+    width: 100%;
 }
